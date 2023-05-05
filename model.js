@@ -1,20 +1,20 @@
 const table = require("@makeitrealcamp/db-mock");
 
 const r1 = table.insert({
-  id: 1,
   name: "Michael",
   cargo: "Frontend Developer",
   telefono: 3222322232,
   email: "mgt@gmail.com",
   link: "https://github.com/Mike2020x",
+  id: 1,
 });
 const r2 = table.insert({
-  id: 2,
   name: "Juan",
   cargo: "Frontend Developer",
   telefono: 516165161,
   email: "jc@gmail.com",
   link: "https://github.com/juanxavier357",
+  id: 2,
 });
 
 function getAllData() {
