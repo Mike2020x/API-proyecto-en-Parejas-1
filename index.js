@@ -1,7 +1,9 @@
 const express = require("express");
 const morgan = require("morgan");
 const cors = require("cors");
+
 require("dotenv").config();
+
 const {
   handleGetAllData,
   handleGetByIdData,
@@ -29,7 +31,7 @@ app.post("/api/members", handleCreateData);
 
 app.patch("/api/members/:id", handleUpdateData);
 
-app.delete("/api/users/:id", handleDeleteData);
+app.delete("/api/members/:id", handleDeleteData);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {

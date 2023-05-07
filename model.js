@@ -48,7 +48,6 @@ function updateData(id, data) {
 
 function deleteData(id) {
   const record = table.remove(id);
-
   return record;
 }
 

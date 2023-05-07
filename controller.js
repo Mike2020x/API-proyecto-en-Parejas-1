@@ -7,7 +7,6 @@ const {
 } = require("./model");
 
 function handleGetAllData(req, res) {
-  console.log("Middleware Controller");
   const records = getAllData();
 
   return res.json(records);
@@ -32,7 +31,7 @@ function handleDeleteData(req, res) {
 
   deleteData(id);
 
-  return res.json({ message: "Record deleted" });
+  return res.status(204).json({ message: "Record deleted" });
 }
 
 function handleCreateData(req, res) {
